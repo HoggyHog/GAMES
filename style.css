@@ -12,18 +12,18 @@ body{
 }
 
 .paddle{
-    --position:50;
+    --position:50;      /* so that we can move it up and down */
 
     position: absolute;
     height:10vh;
     width:1vh;
     background-color: var(--font-color);
-    top:calc(var(--position)*1vh);
-    transform: translateY(-50%);
+    top:calc(var(--position)*1vh);             /* thats a cool way to put it */
+    transform: translateY(-50%);    /* to make sure that the corner is not at the centre, but the centre itself */
 
 }
 .right{
-    right:1vw;
+    right:1vw;      /*  basically 1vw from the right and sll down also */
 }
 
 .left{
@@ -31,9 +31,10 @@ body{
 }
 
 .ball{
-    --x:50;
+    --x:50;          /* so that we can move the ball in fact */
     --y:50;
-    position: absolute;
+
+    position: absolute;     
     height:2vh;
     width:2vh;
     background-color: var(--font-color);
@@ -56,8 +57,8 @@ body{
     padding: 0 1vh;
     margin: 1vh 0;
     
-    flex-grow: 1;
-    flex-basis: 0;
+    flex-grow: 1;        /* so that both sides of the score are of the same length */
+    flex-basis: 0;      /*  to make sure that the length of each part is just the text size */
 }
 
 .score> :first-child{
